@@ -1,0 +1,107 @@
+.servicio3{
+    width: 100%;
+    margin-bottom: 42px;
+    min-height: 75vh;
+    background-color: rgb(22, 22, 22);
+    background-size: cover;
+    background-position: center;
+    color:rgb(255, 255, 255);
+}
+.servicio3-texto{
+    display: block;  
+    text-align: center;
+    padding-top: 25px;   
+}
+.servicio3-texto h1{
+    font-family: "Inria Serif", serif;
+}
+.servicio3-texto h2{
+    color: #9e6c01;
+    font-family: "Lora", serif;
+    font-size: 18px; 
+}
+.servicio3-imagenes{
+    margin-left: 80px;
+    margin-top: 40px; 
+    display: flex;
+}
+.servicio3-imagenes img{
+    width: 300px;
+    margin-left: 70px;
+    border-radius: 50%;
+}
+.servicio3-imagenes img:hover{
+    transform: scale(1.1);
+    transition: 0.5s   
+}
+
+@media (max-width: 1290px) {
+    .servicio3{
+        min-height: 68vh;
+    }
+    .servicio3-imagenes{
+        margin-left: -30px;
+    }
+    .servicio3-imagenes img{
+        width: 350px;
+    }
+    .servicio3-texto h1{
+        font-size: 35px;
+    }
+    .servicio3-texto h2{
+        font-size: 20px; 
+    }
+    
+}
+@media (max-width: 1024px) {
+    .servicio3-imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicio3-imagenes img {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    .servicio3-texto h1 {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+}
+/* Responsivo para 800px a 768px */
+@media (max-width: 800px) and (min-width: 768px) {
+    .servicio3 {
+        min-height: 50vh; /* Reducimos la altura mínima */
+    }
+    .servicio3-imagenes img {
+        width: 200px; /* Reducimos el tamaño de las imágenes */
+        margin: 10px;
+    }
+    .servicio3-texto h1 {
+        font-size: 22px; /* Ajuste del tamaño de fuente */
+    }
+}
+
+/* Responsivo para 414px a 350px */
+@media (max-width: 414px) {
+    .servicio3 {
+        min-height: 40vh; /* Ajustamos la altura mínima */
+    }
+    .servicio3-texto {
+        padding-top: 10px; /* Reducimos el padding superior */
+    }
+    .servicio3-texto h1, .servicio3-texto h2 {
+        font-size: 18px; /* Reducimos el tamaño de la fuente */
+    }
+    .servicio3-imagenes {
+        margin-left: 0;
+        flex-direction: column; /* Cambiamos a disposición de columna para pantallas pequeñas */
+        align-items: center; /* Centramos los elementos en pantallas pequeñas */
+    }
+    .servicio3-imagenes img {
+        width: 150px; /* Ajustamos el tamaño de las imágenes */
+        margin: 10px 0; /* Ajustamos los márgenes */
+    }
+}
+
+

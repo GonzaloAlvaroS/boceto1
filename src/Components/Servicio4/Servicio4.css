@@ -1,0 +1,74 @@
+.servicio4{
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.servicio4 h1{
+    margin-bottom: 40px;
+    font-family: "DM Serif Text", serif;
+}
+.servicio4 img{
+    width: 1000px;
+    height: 400px;
+}
+.btnunete{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 553px;
+    margin-top: 45px; 
+}
+
+@media (max-width: 1290px) {
+    .servicio4 h1 {
+        font-size: 45px; 
+    }
+    .btnunete{
+        margin-left: 522px;    
+    }
+}
+@media (max-width: 1024px) {
+    .servicio4 h1 {
+        font-size: 28px;
+    }
+    .servicio4 img {
+        width: 80%;
+        max-width: 800px;
+    }
+    .btnunete {
+        font-size: 16px;
+        width: auto;
+        margin-left: 0;
+    }
+}
+/* Responsivo para 800px a 768px */
+@media (max-width: 800px) and (min-width: 768px) {
+    .servicio4 h1 {
+        font-size: 28px; /* Ajuste de tamaño de fuente para pantallas medianas */
+    }
+    .servicio4 img {
+        width: 600px; /* Ajuste del ancho de la imagen */
+    }
+    .btnunete {
+        font-size: 14px; /* Ajuste del tamaño del botón */
+        padding: 8px 16px; /* Ajuste del padding del botón */
+    }
+}
+
+/* Responsivo para 414px a 350px */
+@media (max-width: 414px) {
+    .servicio4 h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño para móviles */
+    }
+    .servicio4 img {
+        width: 100%; /* La imagen toma todo el ancho disponible */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    .btnunete {
+        font-size: 14px; /* Tamaño del texto del botón más pequeño */
+        margin-left: 0; /* Centrar el botón en pantallas pequeñas */
+        width: 80%; /* Ancho máximo del botón para centrarse */
+    }
+}
